@@ -34,7 +34,7 @@ def is_palindrome(s: str) -> bool:
 
 ### Solution 2: Two Pointers (In-Place)
 
-```pethon
+```python
 def is_palindrome2(s: str) -> bool:
     left = 0
     right = len(s) - 1
