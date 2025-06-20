@@ -7,16 +7,19 @@ def product_except_self(nums: list[int]) -> list[int]:
     """
 
     length = len(nums)
-    left_prefix = [1] * length
-    right_prefix = [1] * length
+    left = 1
+    right = 1
+    output = [1] * length
 
     for index in range(length - 1):
-        left_prefix[index + 1] *= nums[index] * left_prefix[index]
+        left *= nums[index]
+        output[index + 1] *= left
 
     for index in range(length - 1, 0, -1):
-        right_prefix[index - 1] *= nums[index] * right_prefix[index]
+        right *= nums[index]
+        output[index - 1] *= right
 
-    return [l * r for l, r in zip(left_prefix, right_prefix)]
+    return output
 
 
 assert product_except_self([1, 2, 3, 4]) == [24, 12, 8, 6], 'Test 1 failed'
