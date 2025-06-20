@@ -4,7 +4,7 @@ A curated collection of algorithmic solutions to problems encountered during tec
 
 ## 📁 Repository Structure
 
-Solutions are organized by problem name. Each solution includes:
+Solutions are organized by problem type and name. Each solution includes:
 
 - Implementation in one or more programming languages
 - Brief problem description
