@@ -45,3 +45,16 @@ def top_k_frequent(nums: list[int], k: int) -> list[int]:
 
 * **Time Complexity:** $O(n \cdot log(n))$
 * **Space Complexity:** $O(n)$
+
+## Explanation of the Solution
+
+1. Count Frequencies:
+    * A dictionary `nums_hash` is used to store each number’s frequency in nums.
+    * For each number in nums:
+        * If the number exists in `nums_hash`, increment its count by 1.
+        * If the number does not exist, add it to `nums_hash` with a count of 1.
+2. Sort by Frequency:
+    * The dictionary keys (unique numbers) are sorted in descending order based on their frequency (`nums_hash[x]`).
+    * `reverse=True` ensures higher frequencies appear first.
+3. Select Top k Elements:
+    * The first `k` elements from the sorted list are returned.
