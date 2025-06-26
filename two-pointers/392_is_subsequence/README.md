@@ -54,3 +54,17 @@ def is_subsequence(self, s: str, t: str) -> bool:
 
 * **Time Complexity:** $O(n)$
 * **Space Complexity:** $O(1)$
+
+## Explanation of the Solution
+
+1. Initialization:
+    * `s_pointer` starts at 0 (points to the current character in s being checked).
+    * `s_length` stores the length of s.
+2. Edge Case Handling:
+    * If `s` is empty, it’s trivially a subsequence of any string (including empty `t`), so return `True`.
+3. Iterate Through `t`:
+    * For each character in `t` (using `t_pointer`):
+        * If the current character in `t` matches the current character in `s` (at `s_pointer`), move `s_pointer` forward.
+        * If `s_pointer` reaches the end of `s` (`s_pointer == s_length`), all characters of s were found in order → return `True`.
+4. Final Check:
+    * If the loop ends without `s_pointer` reaching `s_length`, `s` is not a subsequence → return `False`.
