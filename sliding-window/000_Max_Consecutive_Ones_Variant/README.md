@@ -6,15 +6,15 @@ Given a binary array nums, find the maximum length of a consecutive subarray con
 
 **Example 1:**  
 
-Input: `[0, 0]`  
-Output: `0`
-Explanation: Removing any element leaves `[0]` (no `1`s).
+* Input: `[0, 0]`  
+* Output: `0`
+* Explanation: Removing any element leaves `[0]` (no `1`s).
 
 **Example 2:**  
 
-Input: `[0, 1]`  
-Output: `1` 
-Explanation: Remove `0`: `[1]` → sequence of `1` has length `1`.
+* Input: `[0, 1]`  
+* Output: `1` 
+* Explanation: Remove `0`: `[1]` → sequence of `1` has length `1`.
 
 **Constraints:**
 

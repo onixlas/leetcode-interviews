@@ -6,14 +6,14 @@ A phrase is a palindrome if, after converting all uppercase letters into lowerca
 Given a string `s`, return `True` if it is a palindrome, or `False` otherwise.
 
 **Example 1:**  
-Input: `s = "A man, a plan, a canal: Panama"`  
-Output: `true`  
-Explanation: "amanaplanacanalpanama" is a valid palindrome.
+* Input: `s = "A man, a plan, a canal: Panama"`  
+* Output: `true`  
+* Explanation: "amanaplanacanalpanama" is a valid palindrome.
 
 **Example 2:**  
-Input: `s = "race a car"`  
-Output: `false`  
-Explanation: "raceacar" is not a palindrome.
+* Input: `s = "race a car"`  
+* Output: `false`  
+* Explanation: "raceacar" is not a palindrome.
 
 ## Solutions
 
