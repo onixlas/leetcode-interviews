@@ -13,21 +13,18 @@ def max_dist_to_closest(seats: list[int]) -> int:
     """
     length = len(seats)
     left = None
-    right = None
     result = 1
 
     for index in range(length):
         if seats[index] == 0:
             if left is None:
                 left = index
-            right = index
-            if (left == 0) or (right == length - 1):
-                result = max(result, right - left + 1)
+            if (left == 0) or (index == length - 1):
+                result = max(result, index - left + 1)
             else:
-                result = max(result, (right - left + 2) // 2)
+                result = max(result, (index - left + 2) // 2)
         else:
             left = None
-            right = None
     return result
 
 
