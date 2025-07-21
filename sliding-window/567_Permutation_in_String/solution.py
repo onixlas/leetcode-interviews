@@ -1,4 +1,14 @@
 def check_inclusion(s1: str, s2: str) -> bool:
+    """
+    Check if any permutation of s1 exists as a substring in s2.
+
+    This function uses a sliding window approach with hash maps to efficiently
+    track character counts and determine if any permutation of s1 is present in s2.
+
+    :param s1: The string whose permutations we want to find in s2.
+    :param s2: The string in which we're searching for permutations of s1.
+    :return: True if any permutation of s1 is found as a substring in s2, False otherwise.
+    """
     pattern_hash = {}
     for character in s1:
         if character not in pattern_hash:
